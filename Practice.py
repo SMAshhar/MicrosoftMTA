@@ -16,12 +16,16 @@ import datetime
 # y = datetime.datetime.strptime(x, "%m/%d/%Y")
 # print(y.strftime("%m-%d-%Y"))
 
-y = input("Enter your birthday")
-birthdate = datetime.datetime.strptime(y, "%m/%d/%Y").date()
-if birthdate.strftime("%d") == "02":
-    print(birthdate.strftime("Your birthday will be on %dnd of %B, %Y" ))
-elif birthdate.strftime("%d") == "01":
-    print(birthdate.strftime("Your birthday will be on %dst of %B, %Y" ))
-else:
-    print(birthdate.strftime("Your birthday will be on %dth of %B, %Y" ))
+# y = input("Enter your birthday")
+# birthdate = datetime.datetime.strptime(y, "%m/%d/%Y").date()
+# if birthdate.strftime("%d") == "02":
+#     print(birthdate.strftime("Your birthday will be on %dnd of %B, %Y" ))
+# elif birthdate.strftime("%d") == "01":
+#     print(birthdate.strftime("Your birthday will be on %dst of %B, %Y" ))
+# else:
+#     print(birthdate.strftime("Your birthday will be on %dth of %B, %Y" ))
 
+y = input("Enter your birthdate (mm/dd/yyy) : ")
+birthday = datetime.datetime.strptime(y, "%m/%d/%Y")
+comingBD = datetime.datetime.strptime("5/14/2020", "%m/%d/%Y")
+print(birthday - comingBD)
