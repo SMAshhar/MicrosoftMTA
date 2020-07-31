@@ -12,7 +12,16 @@
 
 import datetime
 
-brithday = input("What is your birthday? (mm/dd/yyyy)")
-birthdate = datetime.datetime.strptime(brithday, "%m/%d/%Y").date()
-print(birthdate.day, birthdate.month, birthdate.year)
+# x = input("DAte")
+# y = datetime.datetime.strptime(x, "%m/%d/%Y")
+# print(y.strftime("%m-%d-%Y"))
+
+y = input("Enter your birthday")
+birthdate = datetime.datetime.strptime(y, "%m/%d/%Y").date()
+if birthdate.strftime("%d") == "02":
+    print(birthdate.strftime("Your birthday will be on %dnd of %B, %Y" ))
+elif birthdate.strftime("%d") == "01":
+    print(birthdate.strftime("Your birthday will be on %dst of %B, %Y" ))
+else:
+    print(birthdate.strftime("Your birthday will be on %dth of %B, %Y" ))
 
