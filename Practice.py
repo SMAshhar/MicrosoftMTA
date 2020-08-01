@@ -1,3 +1,7 @@
+############################################ DATE TIME ########################################
+
+
+
 # import datetime
 # currentDate = datetime.date.today()
 # print(currentDate)
@@ -5,12 +9,12 @@
 # print(currentDate.month)
 # print(currentDate.day)
 # print(currentDate.strftime('I have been working since %a, %dth of %b,%y'))
-# asd = datetime.date(2050, 8, 29)
-# print(asd.strftime("Yeehaw... Join Us on %dth of %B, %Y for a lovely evening"))
-# print(asd.strftime("THe thing is %d of %B is our last chance to do anything. After that, the year %Y will no longer be valid for us"))
-# print(asd.strftime("Yes Mirha is right, she called abba to everyone.... "))
+# # asd = datetime.date(2050, 8, 29)
+# # print(asd.strftime("Yeehaw... Join Us on %dth of %B, %Y for a lovely evening"))
+# # print(asd.strftime("THe thing is %d of %B is our last chance to do anything. After that, the year %Y will no longer be valid for us"))
+# # print(asd.strftime("Yes Mirha is right, she called abba to everyone.... "))
 
-import datetime
+# import datetime
 
 # x = input("DAte")
 # y = datetime.datetime.strptime(x, "%m/%d/%Y")
@@ -25,7 +29,61 @@ import datetime
 # else:
 #     print(birthdate.strftime("Your birthday will be on %dth of %B, %Y" ))
 
-y = input("Enter your birthdate (mm/dd/yyy) : ")
-birthday = datetime.datetime.strptime(y, "%m/%d/%Y")
-comingBD = datetime.datetime.strptime("5/14/2020", "%m/%d/%Y")
-print(birthday - comingBD)
+
+# birthday = datetime.datetime.strptime("5/14/2020", "%m/%d/%Y").date()
+# print(birthday)
+# todayDate = datetime.date.today()
+# difference = todayDate - birthday
+# print(difference.days)
+
+# import datetime
+
+# BD = input("Please enter your Birthday in format dd/mm/yyy")
+# user_birthday = datetime.datetime.strptime(BD, "%d/%m/%Y")
+
+# def daysCalculator():
+#     currentDate = datetime.date.today()
+#     difference = currentDate - user_birthday
+#     print("You are now ", difference.days * 3600 * 24, " seconds older")
+#     return difference.days * 3600 * 24
+
+# x = user_birthday + datetime.timedelta(days = 15)
+# x = user_birthday + datetime.timedelta(days = 3, hours = 15, minutes = 32, seconds = 43)
+# print(x)
+
+import datetime
+
+# currentTime = datetime.datetime.now()
+# x = datetime.datetime.strftime(currentTime, ("Right now, the time is %I: %m: %S %p on %d of %B, %Y"))
+# print(x)
+
+# x = input("Enter date in dd/mm/yyyy formate")
+# deadline = datetime.datetime.strptime(x, "%d/%m/%Y")
+# print(deadline)
+
+# y = datetime.datetime.today()
+# time = deadline - y
+# print(time.days//7, " weeks ", time.days%7, " days ")
+
+# z = input("Enter your date of deadline enter in formate, dd/mm/yyyy")
+# deadline = datetime.datetime.strptime(z, "%d/%m/%Y")
+# time = deadline - datetime.datetime.today()
+# print(time.days//7, " weeks and ", time.days%7, " days")
+
+#################################### EXCEPTIONS #############################################
+
+a = float(input("Enter first number"))
+b = float(input("Enter second number"))
+
+# import sys
+
+# try:
+#     print(a, "/", b, " = ", a/b)
+# except:
+#     print("Nice.... a mistake. Always loves to make mistake")
+#     print(sys.exc_info()[0])
+
+try:
+    print(a, "/", b, "=", a/b)
+except ZeroDivisionError:
+    print("Nom nom nom nom noooooommm.... !")
