@@ -83,7 +83,19 @@ b = float(input("Enter second number"))
 #     print("Nice.... a mistake. Always loves to make mistake")
 #     print(sys.exc_info()[0])
 
+# try:
+#     print(a, "/", b, "=", a/b)
+# except ZeroDivisionError:
+#     print("Nom nom nom nom noooooommm.... !")
+
+import sys
+errorflag = False
+
 try:
-    print(a, "/", b, "=", a/b)
-except ZeroDivisionError:
-    print("Nom nom nom nom noooooommm.... !")
+    print(int(a/b))
+except:
+    print("nope")
+    print(sys.exc_inf()[0])
+    errorflag = True
+if not errorflag:
+    print("No error found")
