@@ -72,8 +72,8 @@ import datetime
 
 #################################### EXCEPTIONS #############################################
 
-a = float(input("Enter first number"))
-b = float(input("Enter second number"))
+# a = float(input("Enter first number"))
+# b = float(input("Enter second number"))
 
 # import sys
 
@@ -88,14 +88,63 @@ b = float(input("Enter second number"))
 # except ZeroDivisionError:
 #     print("Nom nom nom nom noooooommm.... !")
 
-import sys
-errorflag = False
+# import sys
+# errorflag = False
 
-try:
-    print(int(a/b))
-except:
-    print("nope")
-    print(sys.exc_inf()[0])
-    errorflag = True
-if not errorflag:
-    print("No error found")
+# try:
+#     print(int(a/b))
+# except:
+#     print("nope")
+#     print(sys.exc_inf()[0])
+#     errorflag = True
+# if not errorflag:
+#     print("No error found")
+
+# import sys
+
+# x = input("Enter the name of the file")
+# try:
+#     with open(x, "r") as f:
+#         reader = f.reader
+#         print(reader)
+# except:
+#     print("No file found")
+#     print(sys.exc_info()[0])
+
+# with open("A.txt", "w") as f:
+#     f.write("Aloo tinde bangon")
+# with open("A.txt", "r") as f:
+#     x = f.read()
+#     print(x)
+
+# x = 1
+
+# while x <= 5:
+#     y = input("Enter your guest name")
+#     z = input("Enter their age")
+#     with open("asd.csv", "a") as f:
+#         f.write(f"{y}, {z}\n")
+#     x += 1
+# x = open("asd.csv", "r") 
+# # y = x.read()
+# # print(y)
+# import csv
+
+# def writer(filename, content):
+#     with open(filename, "a") as f:
+#         f.write(content)
+
+# asd = "All is lost"
+# writer("A.txt", asd)
+# with open("A.txt", "r") as f:
+#     print(f.read())
+ 
+import csv
+
+files = []
+ 
+with open("asd.csv") as f:
+    content = csv.reader(f)
+    for x in content:
+        files += x
+    print(files)    
