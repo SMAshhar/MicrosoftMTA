@@ -117,6 +117,8 @@ import datetime
 #     x = f.read()
 #     print(x)
 
+################################# Writing Fil #####################################3
+
 # x = 1
 
 # while x <= 5:
@@ -138,13 +140,18 @@ import datetime
 # writer("A.txt", asd)
 # with open("A.txt", "r") as f:
 #     print(f.read())
- 
-import csv
 
-files = []
+################################## File reader ################################
  
-with open("asd.csv") as f:
-    content = csv.reader(f)
-    for x in content:
-        files += x
-    print(files)    
+# import csv
+
+# files = []
+ 
+# with open("asd.csv") as f:
+#     content = csv.reader(f)
+#     for x in content:
+#         files += x
+#     print(files)    
+
+x = "20" * 3
+print(type(+1E10))
