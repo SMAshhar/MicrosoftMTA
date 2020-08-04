@@ -153,5 +153,15 @@ import datetime
 #         files += x
 #     print(files)    
 
-x = "20" * 3
-print(type(+1E10))
+# x = "20" * 3
+# print(type(+1E10))
+
+L = int(input("Enter loan amount"))
+i = (int(input("Enter interest rate in % ")))/100
+n = int(input("Enter numbe rof years for installament"))
+
+M = L*(i*(1+i)*n) / ((1+i)*n-1)
+
+print("Your monthly installment is ", M.2f)
+
+ 
