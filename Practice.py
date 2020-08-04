@@ -177,29 +177,63 @@ import datetime
     
 #######################  PLAYING WITH VARIABLES ##################
 
-print('''
-    This is your story. A story that was never yours - yet, you would want it to.
-    Enjoy .. !
-''')
+# print('''
+#     This is your story. A story that was never yours - yet, you would want it to.
+#     Enjoy .. !
+# ''')
 
-name = input("Enter your name : ")
-favAnimal = input("Enter the name of your spritual animal : ")
+# name = input("Enter your name : ")
+# favAnimal = input("Enter the name of your spritual animal : ")
 
-print(f"""
-    Like every morning, {name} woke up dizzy headed, yet there was 
-    some thing off about this morning. The light was too bright for
-    example or the wind was pleasently cold or {name} was not on bed.
+# print(f"""
+#     Like every morning, {name} woke up dizzy headed, yet there was 
+#     some thing off about this morning. The light was too bright for
+#     example or the wind was pleasently cold or {name} was not on bed.
     
-    Realizing the situation, {name}, that is you, got up in an instent,
-    eyes wide, to found yourself in a flowery meadow. Awestruck, you
-    glared around and found a {favAnimal}, staring right at you. A
-    bit starteled you got on your feet.
+#     Realizing the situation, {name}, that is you, got up in an instent,
+#     eyes wide, to found yourself in a flowery meadow. Awestruck, you
+#     glared around and found a {favAnimal}, staring right at you. A
+#     bit starteled you got on your feet.
 
-    "Thats quite the get up you have there. " said te {favAnimal}
-    You realized that you are still wearing your pajamas, with the
-    tag {name} you got from your grandmother. 
-    """)
+#     "Thats quite the get up you have there. " said te {favAnimal}
+#     You realized that you are still wearing your pajamas, with the
+#     tag {name} you got from your grandmother. 
+#     """)
+
+# color = input("Enter your fav. color : ")
+# animal  = input("Enter your fav. animal : ")
+# building  = input("Enter your fav. building : ")
 
 
 
- 
+# input("Hickery Dickery Doc..")
+# input(f"A {color} {animal} went up the {building}")
+# input("The clock struck one...")
+# input(f"The {color} {animal} came down.")
+# input("Hickery Dickery Doc..")
+
+# import turtle
+# turtle.forward(100)
+# x = 0
+# while x <= 4:
+#     turtle.forward(100)
+#     turtle.right(90)
+#     x += 1
+# input()
+
+# import turtle
+# turtle.color("blue")
+# turtle.shape("turtle")
+# turtle.circle(100)
+# turtle.exitonclick()
+
+import os
+
+def reader(filename, mode):
+    with open(filename, mode) as f:
+        if os.path.isfile(filename):
+            return f.readlines()
+        else:
+            return None
+read = reader("A.txt", "r")
+print(read)
