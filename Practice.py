@@ -156,12 +156,28 @@ import datetime
 # x = "20" * 3
 # print(type(+1E10))
 
-L = int(input("Enter loan amount"))
-i = (int(input("Enter interest rate in % ")))/100
-n = int(input("Enter numbe rof years for installament"))
+# L = int(input("Enter loan amount"))
+# i = (int(input("Enter interest rate in % ")))/100
+# n = int(input("Enter numbe rof years for installament"))
 
-M = L*(i*(1+i)*n) / ((1+i)*n-1)
+# M = L*(i*(1+i)*n) / ((1+i)*n-1)
 
-print("Your monthly installment is ", M.2f)
+# print("Your monthly installment is ", M)
+
+user = ""
+listOfUsers = []
+while user.lower() != "q":
+    user = input("Enter the name of guest or 'q' to quite")
+    if user.lower() != "q":
+        listOfUsers.append(user.title())
+listOfUsers.sort()
+print(listOfUsers)
+for users in listOfUsers:
+    print(users)
+    
+
+
+
+
 
  
