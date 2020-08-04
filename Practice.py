@@ -164,19 +164,41 @@ import datetime
 
 # print("Your monthly installment is ", M)
 
-user = ""
-listOfUsers = []
-while user.lower() != "q":
-    user = input("Enter the name of guest or 'q' to quite")
-    if user.lower() != "q":
-        listOfUsers.append(user.title())
-listOfUsers.sort()
-print(listOfUsers)
-for users in listOfUsers:
-    print(users)
+# user = ""
+# listOfUsers = []
+# while user.lower() != "q":
+#     user = input("Enter the name of guest or 'q' to quite")
+#     if user.lower() != "q":
+#         listOfUsers.append(user.title())
+# listOfUsers.sort()
+# print(listOfUsers)
+# for users in listOfUsers:
+#     print(users)
     
+#######################  PLAYING WITH VARIABLES ##################
 
+print('''
+    This is your story. A story that was never yours - yet, you would want it to.
+    Enjoy .. !
+''')
 
+name = input("Enter your name : ")
+favAnimal = input("Enter the name of your spritual animal : ")
+
+print(f"""
+    Like every morning, {name} woke up dizzy headed, yet there was 
+    some thing off about this morning. The light was too bright for
+    example or the wind was pleasently cold or {name} was not on bed.
+    
+    Realizing the situation, {name}, that is you, got up in an instent,
+    eyes wide, to found yourself in a flowery meadow. Awestruck, you
+    glared around and found a {favAnimal}, staring right at you. A
+    bit starteled you got on your feet.
+
+    "Thats quite the get up you have there. " said te {favAnimal}
+    You realized that you are still wearing your pajamas, with the
+    tag {name} you got from your grandmother. 
+    """)
 
 
 
