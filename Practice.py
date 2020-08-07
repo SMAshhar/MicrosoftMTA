@@ -227,13 +227,145 @@ import datetime
 # turtle.circle(100)
 # turtle.exitonclick()
 
-import os
+# import os
 
-def reader(filename, mode):
-    with open(filename, mode) as f:
-        if os.path.isfile(filename):
-            return f.readlines()
-        else:
-            return None
-read = reader("A.txt", "r")
-print(read)
+# def reader(filename, mode):
+#     with open(filename, mode) as f:
+#         if os.path.isfile(filename):
+#             return f.readlines()
+#         else:
+#             return None
+# read = reader("A.txt", "r")
+# for x in read:
+#     print(x)
+# print(read)
+
+# print(type(5.0))
+
+# a = [1, 2, 3]       
+# b = ['a', 'b', 'c']
+# print(a is b)
+# print(a == b)
+# a = b
+# print(a is b)
+# print(a == b)
+
+# for x in range(2,12, 2):
+#     for y in range(2,13):
+# #         print(x, "*", y, " = ", x*y )
+# i = 250 
+# while len(str(i)) > 72: 
+#     i *= 2 
+# else: 
+#     i //= 2 
+#     print(i)
+
+# n = 0 
+# while n < 4: 
+#     n += 1
+#     print(n, end=" ")
+
+# Val = 1 
+# Val2 = 0 
+# Val = Val ^ Val2 
+# Val2 = Val ^ Val2 
+# Val = Val ^ Val2
+# print(Val)
+
+# z, y, x = 2, 1, 0 
+# x, z = z, y 
+# print(x, y, z)
+# y = y - z 
+# # put line here 
+# x, y, z = y, z, x
+# print(x, y, z)
+
+# a = 0 
+# b = a ** 0 
+# if b < a + 1: 
+#     c = 1 
+# elif b == 1: 
+#     c = 2 
+# else: 
+#     c = 3 
+# print(a + b + c)
+
+# i = 10 
+# while i > 0 : 
+#     i -= 3 
+#     print("*") 
+#     if i <= 3: 
+#         break 
+#     else: 
+#         print("*")
+
+# for i in range(1, 4, 2): 
+#     print("*", end="**")
+# print("***")
+
+# s = "Hello, Python!" 
+# print(s[-14:19])
+
+# lst = ["A", "B", "C", 2, 4] 
+# del lst[0:-2] 
+# print(lst)
+
+# dict = { 'a': 1, 'b': 2, 'c': 3 } 
+# for item in dict: 
+#     print(item)
+
+# s = 'python' 
+# for i in range(len(s)): 
+#     i = s[i].upper() 
+# # print(s, end="")
+
+# lst = [i // i for i in range(1,4)]
+# print(lst)
+
+
+# lst = [[c for c in range(r)] for r in range(3)] 
+# for x in lst: 
+#     for y in x: 
+#         if y < 2: 
+#             print('*', end='')
+
+# lst = [2 ** x for x in range(0, 11)] 
+# # print(lst[-1])
+
+# lst1 = "12,34" 
+# lst2 = lst1.split(',') 
+# # print(len(lst1) < len(lst2))
+
+# def fun(a, b=0, c=5, d=1): 
+#     return a ** b ** c 
+# print(fun(b=2, a=2, c=3))
+
+# x = 5 
+# f = lambda x: 1 + 2 
+# print(f(x))
+
+# from math import pi as xyz # line 01 
+# print(xyz)
+
+# import random
+# for i in range(10): 
+#     print(random(1, 5))
+
+# x = 1 # line 1 
+# def a(x): # line 2 
+#     return 2 * x # line 3 
+# x = 2 + a(x) # line 4 
+# print(a(x))
+
+s = 'SPAM' 
+def f(x): 
+    return s + 'MAPS' 
+print(f(s))
+
+
+def gen(): 
+    lst = range(5) 
+    for i in lst: 
+        yield i*i 
+for i in gen(): 
+    print(i, end="")
