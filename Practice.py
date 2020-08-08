@@ -355,17 +355,46 @@ import datetime
 # def a(x): # line 2 
 #     return 2 * x # line 3 
 # x = 2 + a(x) # line 4 
-# print(a(x))
+# # print(a(x))
 
-s = 'SPAM' 
-def f(x): 
-    return s + 'MAPS' 
-print(f(s))
+# s = 'SPAM' 
+# def f(x): 
+#     return s + 'MAPS' 
+# print(f(s))
 
 
-def gen(): 
-    lst = range(5) 
-    for i in lst: 
-        yield i*i 
-for i in gen(): 
-    print(i, end="")
+# def gen(): 
+#     lst = range(5) 
+#     for i in lst: 
+#         yield i*i 
+# for i in gen(): 
+#     print(i, end="")
+
+# import math
+# def area_circle(r):
+#     print(math.pi*math.pow(r,2))
+# # area_circle(1)
+
+# score = {"Dave":100000,
+# "Steve":90000,
+# "Amy":75900,
+# }
+# for person, score in score.items():
+#     print('{0:8} *** {1:,}'.format(person, score))
+
+# import sys
+# print(sys.executable)
+
+# x = 3
+# x += 1
+# x **=2
+# print(x)
+
+
+# x = 10
+# y = 6
+
+# z = y // 3 * 3 / 2 + x % 2 ** 2
+# print(z)
+
+print(10%2**2)
