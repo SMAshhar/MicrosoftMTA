@@ -402,12 +402,18 @@ import datetime
 # result = a is b
 # print(result)
 
-x = "Syed Muhammad Ashhar"
-print(x[::-1])
+# x = "Syed Muhammad Ashhar"
+# print(x[::-1])
 
-rooms = {1:"foyer", 2:"conference room"}
-room = int(input("enter the room number"))
-if not room in rooms:
-    print("Room doesnt exist")
-else:
-    print("your room name is: "+ rooms[room])
+# rooms = {1:"foyer", 2:"conference room"}
+# room = input("enter the room number")
+# if not room in rooms:
+#     print("Room doesnt exist")
+# else:
+#     print("your room name is: "+ rooms[room])
+import datetime
+bd = input("Enter your date of birht in dd/mm/yyyy format")
+bday = datetime.datetime.strptime(bd, "%d/%m/%Y").date()
+current = datetime.date.today()
+age = current - bday
+print("You are ", int(age.days/365), " years old")
