@@ -397,4 +397,17 @@ import datetime
 # z = y // 3 * 3 / 2 + x % 2 ** 2
 # print(z)
 
-print(10%2**2)
+# a = "True"
+# b = "True"
+# result = a is b
+# print(result)
+
+x = "Syed Muhammad Ashhar"
+print(x[::-1])
+
+rooms = {1:"foyer", 2:"conference room"}
+room = int(input("enter the room number"))
+if not room in rooms:
+    print("Room doesnt exist")
+else:
+    print("your room name is: "+ rooms[room])
