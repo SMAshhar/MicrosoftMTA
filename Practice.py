@@ -434,7 +434,16 @@ import datetime
 
 # help(abc)
 
-current = datetime.datetime.now()
-print(current)
-x = datetime.datetime.strftime(current, "&Y-%m-%d %H:%M:%S")
+# current = datetime.datetime.now()
+# print(current)
+# x = datetime.datetime.strftime(current, "&Y-%m-%d %H:%M:%S")
 
+list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+# print("Select a face")
+# x = int(input("select from face 1, 2, 3, 4, 5"))
+# print("Do anything and we will know you")
+# if not x in list1: 
+#     print("We warned you")
+# else:
+#     print("Good Boy")
+print(list1[3:10:1])
