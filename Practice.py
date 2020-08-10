@@ -409,11 +409,32 @@ import datetime
 # room = input("enter the room number")
 # if not room in rooms:
 #     print("Room doesnt exist")
-# else:
-#     print("your room name is: "+ rooms[room])
-import datetime
-bd = input("Enter your date of birht in dd/mm/yyyy format")
-bday = datetime.datetime.strptime(bd, "%d/%m/%Y").date()
-current = datetime.date.today()
-age = current - bday
-print("You are ", int(age.days/365), " years old")
+# # else:
+# #     print("your room name is: "+ rooms[room])
+# import datetime
+# bd = input("Enter your date of birht in dd/mm/yyyy format")
+# bday = datetime.datetime.strptime(bd, "%d/%m/%Y").date()
+# current = datetime.date.today()
+# age = current - bday
+# print("You are ", int(age.days/365), " years old")
+
+# def print_table(file):
+#     data = open(file, "r")
+#     for record in data:
+#         fields = record.split(",")
+#         print("{0:10} {1:5.1f} {2:7.2f}".format(fields[0],eval(fields[1]), eval(fields[2])))
+
+# # print_table("myfile.txt")
+
+
+# def abc():
+#     '''THi is a functino to return
+#     the values of living'''
+#     return "hello"
+
+# help(abc)
+
+current = datetime.datetime.now()
+print(current)
+x = datetime.datetime.strftime(current, "&Y-%m-%d %H:%M:%S")
+
